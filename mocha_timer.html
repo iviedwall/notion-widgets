@@ -107,19 +107,19 @@
 		}
 
 		pomodoroButton.addEventListener('click', () => {
-			clearInterval(countdown);
+			pauseTimer();
 			time = 1500;
 			updateTimer();
 		});
 
 		shortBreakButton.addEventListener('click', () => {
-			clearInterval(countdown);
+			pauseTimer();
 			time = 300;
 			updateTimer();
 		});
 
 		longBreakButton.addEventListener('click', () => {
-			clearInterval(countdown);
+			pauseTimer();
 			time = 600;
 			updateTimer();
 		});
