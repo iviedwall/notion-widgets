@@ -78,8 +78,6 @@
 		const pomodoroButton = document.querySelector('#pomodoro');
 		const shortBreakButton = document.querySelector('#short-break');
 		const longBreakButton = document.querySelector('#long-break');
-        const volumeControl = document.querySelector('#volume');
-
 		let time = 1500;
 		let countdown;
 		let paused = true;
@@ -94,7 +92,7 @@
 			paused = false;
 			countdown = setInterval(() => {
 				time--;
-				if (time < 0 or paused == true) {
+				if (time < 0 || paused == true) {
 					clearInterval(countdown);
 					timer.textContent = '25:00';
 				} else {
